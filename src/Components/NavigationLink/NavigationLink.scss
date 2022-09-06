@@ -1,0 +1,17 @@
+.nav_link{
+  font-weight: 600;
+  color: #0d0d0d;
+  margin: 0 15px;
+  text-decoration: none;
+
+  &:hover{
+    @extend .active
+  }
+}
+
+.active{
+  text-decoration:underline;
+  color: darkblue;
+  cursor: pointer;
+}
+
