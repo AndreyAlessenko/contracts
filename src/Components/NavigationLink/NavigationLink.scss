@@ -1,9 +1,8 @@
 .nav_link{
   font-weight: 600;
-  color: #0d0d0d;
   margin: 0 15px;
   text-decoration: none;
-
+  color: #0d0d0d;
   &:hover{
     @extend .active
   }
@@ -11,7 +10,7 @@
 
 .active{
   text-decoration:underline;
-  color: darkblue;
+  color: #00CED1;
   cursor: pointer;
 }
 
