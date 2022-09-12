@@ -8,11 +8,11 @@ function Navigation() {
 				<NavigationLink
 					title={'Сотрудники'}
 					link={'https://www.google.com/'}
+					active={true}
 				/>
 				<NavigationLink
 					title={'Договоры'}
 					link={'https://www.google.com/'}
-					active={true}
 				/>
 			</nav>
 	);

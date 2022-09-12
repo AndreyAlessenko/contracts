@@ -7,10 +7,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: midnightblue;
+  background-color: #00CED1;
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1{
+  color: #0d0d0d;
+}
+
+.table_header{
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+
