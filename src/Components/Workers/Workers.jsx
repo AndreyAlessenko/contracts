@@ -8,6 +8,8 @@ function Workers() {
 		{id:1, name: 'Адльберт'},
 		{id:2, name: 'Оббиратель бабушек'},
 		{id:3, name: 'Начальникамана'},
+		{id:4, name: 'Новый'},
+
 	]
 
 	return (
