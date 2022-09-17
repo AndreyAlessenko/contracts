@@ -1,0 +1,13 @@
+.add_btn{
+  background: lawngreen;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: slategrey;
+
+  &:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px #00CED1;
+  }
+}
