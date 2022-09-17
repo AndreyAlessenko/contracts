@@ -1,16 +1,23 @@
 import './Workers.scss';
 import React from 'react'
 import TableRow from '../Parts/TableRow'
+import {useDispatch} from 'react-redux'
+import Button from '../Parts/Button/Button'
 
-function Workers() {
+function Workers(props) {
 
-	const workers = [
-		{id:1, name: 'Адльберт'},
-		{id:2, name: 'Оббиратель бабушек'},
-		{id:3, name: 'Начальникамана'},
-		{id:4, name: 'Новый'},
+	let {workers} = props
 
-	]
+	const dispatch = useDispatch()
+
+	const addWorker = () =>{
+		let name = prompt()
+		const worker = {
+			name,
+			id:workers.length+1
+		}
+		dispatch({type: 'ADD_WORKER',payload:worker})
+	}
 
 	return (
 		<div className={'wrapper'}>
@@ -26,6 +33,13 @@ function Workers() {
 							name={item.name}
 						/>
 					})}
+				</div>
+				<div>
+					<Button
+						className={'add_btn'}
+						clickFunc={addWorker}
+						name={'+ Добавить сотрудника'}
+					/>
 				</div>
 			</div>
 
