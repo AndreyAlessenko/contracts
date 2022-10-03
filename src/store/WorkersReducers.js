@@ -8,7 +8,7 @@ const defaultState = {
 	{id:3, name: 'Новый'},
 ]}
 
-export const workersReduser = (state = defaultState, action) => {
+export const workersReducer = (state = defaultState, action) => {
 	switch (action.type) {
 		case 'ADD_WORKER':
 			return {...state, workers:[...state.workers, action.payload]}

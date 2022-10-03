@@ -1,10 +1,10 @@
 import {createStore, combineReducers} from 'redux'
-import {workersReduser} from './WorkersRedusers'
-import {contractReduser} from './ContractsReduser'
+import {workersReducer} from './WorkersReducers'
+import {contractReducer} from './ContractsReducer'
 
 const rootReducers = combineReducers({
-	workers: workersReduser,
-	contracts:contractReduser
+	workers: workersReducer,
+	contracts:contractReducer
 })
 
 export const store = createStore(rootReducers)
