@@ -11,3 +11,17 @@
     box-shadow: 0 0 10px #00CED1;
   }
 }
+
+.del_btn{
+  background: red;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  font-size: 25px;
+  width: 31px;
+
+  &:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px #00CED1;
+  }
+}

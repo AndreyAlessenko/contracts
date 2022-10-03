@@ -5,7 +5,7 @@ const defaultState = [
 	{id:44, name: 'Договор 4'},
 ]
 
-export const contractReduser = (state = defaultState, action) => {
+export const contractReducer = (state = defaultState, action) => {
 	switch (action.type) {
 		case 'ADD_CONTRACT':
 			return [...state, action.payload]
