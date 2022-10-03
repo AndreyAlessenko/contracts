@@ -19,6 +19,11 @@ function Workers(props) {
 		dispatch({type: 'ADD_WORKER',payload:worker})
 	}
 
+	const delWorker = (worker_id) =>{
+		console.log('worker_id',worker_id)
+		dispatch({type: 'REMOVE_WORKER',payload:worker_id})
+	}
+
 	return (
 		<div className={'wrapper'}>
 			<h1>Список сотрудников</h1>
@@ -29,8 +34,10 @@ function Workers(props) {
 				<div>
 					{workers.map(item =>{
 						return <TableRow
-							key={item.id}
+							key={'contact' + item.id}
 							name={item.name}
+							delItem={delWorker}
+							param={item.id}
 						/>
 					})}
 				</div>
