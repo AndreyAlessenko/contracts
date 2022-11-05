@@ -7,12 +7,12 @@ function Navigation() {
 			<nav className={'nav'}>
 				<NavigationLink
 					title={'Сотрудники'}
-					link={'https://www.google.com/'}
+					link={'/workers'}
 					active={true}
 				/>
 				<NavigationLink
 					title={'Договоры'}
-					link={'https://www.google.com/'}
+					link={'/contracts'}
 				/>
 			</nav>
 	);

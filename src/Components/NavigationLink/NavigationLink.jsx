@@ -1,13 +1,14 @@
 import React from 'react'
 import './NavigationLink.scss'
+import { Link } from 'react-router-dom'
 
 function NavigationLink(props) {
 	const { title, link, active} = props
 	let className = 'nav_link' + (active ? ' active': '')
 	return (
-		<a className={className}
-			 href={link}
-		>{title}</a>
+		<Link className={className}
+			 to={link}
+		>{title}</Link>
 	);
 }
 
