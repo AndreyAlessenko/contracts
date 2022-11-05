@@ -1,0 +1,13 @@
+.wrapper{
+  background:white;
+  width: 80%;
+  margin: 30px auto;
+  border-radius:10px;
+  padding:20px;
+}
+
+.worker_table{
+  display: grid;
+  grid-template-columns: 1fr
+}
+
